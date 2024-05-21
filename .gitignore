@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.dist-info/
+*.egg
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+*$py.class
+
+# Django #
+*.log
+.local
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Java
+target/
+
+# Virtual environment
+venv/
+
+# Database
+*.sqlite3
+*.sqlite3-journal
+*.sql
+*.sqlite
+*.log
+
+# Data
+data/
+html/
+csv/
+*.csv
+*.domain
+*.data
+
+# Media files
+media/
+
+# Static files
+static/
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# temporary and log files
+tmp/
+temp/
+log/
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor directories
+.idea/
+.vscode/
+*.swp
+*.sublime-workspace
+
+# Emacs temporary files
+*~
+\#*\#
+.\#*
+*.swp
+*auto-save-list*
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log* data/csv
+
+# Project Specific
+!data 
