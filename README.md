@@ -23,9 +23,9 @@ Welcome to the repository for our marketing data analysis projects. This reposit
 
 ## Project Structure
 - `data/`: Folder where you need to download all datasets used for the projects.
-- `notebooks/`: Jupyter notebooks with the analysis and visualizations.
-- `scripts/`: Python scripts for data preprocessing and analysis.
-- `presentations/`: Slide decks prepared for client presentations.
+- `e-commerce`
+- `shopping_mall`
+- `marketing_campaign`
 
 ## How to Use
 1. Clone the repository.
