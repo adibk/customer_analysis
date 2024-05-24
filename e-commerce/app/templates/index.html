@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Flask App{% endblock %}
+
+{% block content %}
+
+<div class="pagetitle">
+    <h1>Upload File</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Upload</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section dashboard">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <div class="row">
+
+                <!-- Prediction modules Upload -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="filter">
+                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="dropdown-header text-start">
+                                    <h6>Filter</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Transactions</a></li>
+                                <li><a class="dropdown-item" href="#">Customers</a></li>
+                                <li><a class="dropdown-item" href="#">Product</a></li>
+                                <li><a class="dropdown-item" href="#">Employee</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Upload File <span>Transactions</span></h5>
+                            <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                                <div class="choose-file-btn">
+                                    <input type="file" id="file-upload" name="file" style="display: none;"
+                                        onchange="updateFileName()" />
+                                    <label for="file-upload" class="btn btn-primary">Choose File</label>
+                                    <span id="file-name">No file chosen</span>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="uploadData()">Upload</button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End Prediction module Upload-->
+
+                <!-- Prediction result -->
+                <div class="col-12 prediction-result-container">
+                    <div class="card">
+                        <div class="filter">
+                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="dropdown-header text-start">
+                                    <h6>Filter</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Message</a></li>
+                                <li><a class="dropdown-item" href="#">Status</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Response <span>Message</span></h5>
+                            <div id="prediction-result-upload"></div> <!-- Placeholder for the prediction result -->
+                        </div>
+                    </div>
+                </div><!-- End Prediction result -->
+
+                <!-- Placeholder for the new card block -->
+                <div id="new-card-container"></div>
+
+            </div>
+        </div><!-- End Left side columns -->
+    
+        
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+            {% include 'partials/recent-activity.html' %}
+            {% include 'partials/budget-report.html' %}
+            {% include 'partials/website-traffic.html' %}
+            {% include 'partials/news-updates.html' %}
+        </div><!-- End Right side columns -->
+
+    </div>
+</section>
+
+{% endblock %}
+
+
