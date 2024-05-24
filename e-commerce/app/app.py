@@ -47,5 +47,9 @@ def analyse_file():
     except Exception as e:
         return jsonify({'message': 'File processing failed', 'error': str(e)}), 400
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

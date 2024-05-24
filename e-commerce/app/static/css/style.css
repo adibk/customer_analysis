@@ -106,6 +106,34 @@ input:valid {
 .table-hover-effect td.hovered {
     border: 1px solid rgba(0, 115, 255, 0.6);
 }
+
+.about-card {
+  min-height: 500px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.team-member {
+  text-align: center;
+}
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.member-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
