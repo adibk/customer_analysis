@@ -117,3 +117,4 @@ yarn-error.log* data/csv
 
 # Project Specific
 !data 
+!static/
